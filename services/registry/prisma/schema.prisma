@@ -1,0 +1,61 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  CITIZEN
+  ADMIN
+  PROVIDER
+}
+
+enum ServiceType {
+  HEALTH
+  AGRI
+  CITY
+  OTHER
+}
+
+enum ServiceStatus {
+  ACTIVE
+  DOWN
+  MAINTENANCE
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      Role     @default(CITIZEN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  logs      AccessLog[]
+}
+
+model ServiceNode {
+  id          String        @id @default(uuid())
+  name        String
+  type        ServiceType
+  endpointUrl String
+  status      ServiceStatus @default(ACTIVE)
+  metadata    Json?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  logs        AccessLog[]
+}
+
+model AccessLog {
+  id        String   @id @default(uuid())
+  userId    String?
+  serviceId String?
+  action    String
+  timestamp DateTime @default(now())
+
+  user      User?        @relation(fields: [userId], references: [id])
+  service   ServiceNode? @relation(fields: [serviceId], references: [id])
+}
