@@ -7,7 +7,7 @@ import { Zap, Grid, LayoutDashboard, ShieldCheck, Layers, Globe } from "lucide-r
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: "Ingenious DPI",
+  title: "Kebab DPI",
   description: "National-Scale Digital Public Infrastructure",
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({
                     <div className="bg-slate-900 p-1.5 rounded-lg text-white group-hover:scale-110 transition-transform duration-300">
                       <Zap className="h-4 w-4 fill-current" />
                     </div>
-                    <span className="font-bold text-xl tracking-tight text-slate-900">Ingenious<span className="text-indigo-600">DPI</span></span>
+                    <span className="font-bold text-xl tracking-tight text-slate-900">Kebab<span className="text-indigo-600">DPI</span></span>
                   </Link>
                 </div>
 
@@ -83,7 +83,7 @@ export default function RootLayout({
                     <div className="bg-indigo-600 p-1 rounded-md text-white">
                       <Zap className="h-4 w-4 fill-current" />
                     </div>
-                    <span className="font-bold text-lg text-slate-900">Ingenious<span className="text-indigo-600">DPI</span></span>
+                    <span className="font-bold text-lg text-slate-900">Kebab<span className="text-indigo-600">DPI</span></span>
                   </div>
                   <p className="text-sm text-slate-500 leading-relaxed">
                     Building the next generation of digital public infrastructure for a connected nation.
@@ -114,7 +114,7 @@ export default function RootLayout({
                 </div>
               </div>
               <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p className="text-xs text-slate-400">© 2026 Ingenious Hackathon Prototype. All rights reserved.</p>
+                <p className="text-xs text-slate-400">© 2026 Kebab Hackathon Prototype. All rights reserved.</p>
                 <div className="flex gap-4">
                   {/* Social icons placeholders */}
                   <div className="h-8 w-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-indigo-600 transition-colors cursor-pointer"><Globe className="h-4 w-4" /></div>
