@@ -1,0 +1,276 @@
+{
+    "services": [
+        {
+            "id": "1",
+            "name": "National Health Stack (ABDM)",
+            "status": "Operational",
+            "uptime": "99.99%",
+            "load": "High",
+            "region": "New Delhi (Central)",
+            "type": "Health"
+        },
+        {
+            "id": "2",
+            "name": "Ahmedabad Smart City Node",
+            "status": "Operational",
+            "uptime": "99.8%",
+            "load": "Medium",
+            "region": "Ahmedabad (West)",
+            "type": "City"
+        },
+        {
+            "id": "3",
+            "name": "Gandhinagar Agri-Tech Hub",
+            "status": "Maintenance",
+            "uptime": "98.5%",
+            "load": "Low",
+            "region": "Gandhinagar",
+            "type": "Agriculture"
+        },
+        {
+            "id": "4",
+            "name": "SVP Hospital Data Gateway",
+            "status": "Operational",
+            "uptime": "99.9%",
+            "load": "High",
+            "region": "Ahmedabad (Riverfront)",
+            "type": "Health"
+        },
+        {
+            "id": "5",
+            "name": "Gujarat Police Traffic Grid",
+            "status": "Operational",
+            "uptime": "99.7%",
+            "load": "Extreme",
+            "region": "State-wide",
+            "type": "City"
+        },
+        {
+            "id": "6",
+            "name": "Civil Hospital Asarwa Node",
+            "status": "Operational",
+            "uptime": "99.6%",
+            "load": "Critical",
+            "region": "Ahmedabad (East)",
+            "type": "Health"
+        },
+        {
+            "id": "7",
+            "name": "GSRTC Logistics Relay",
+            "status": "Operational",
+            "uptime": "99.2%",
+            "load": "Medium",
+            "region": "Gujarat",
+            "type": "City"
+        },
+        {
+            "id": "8",
+            "name": "APMC Vasna Market Feed",
+            "status": "Operational",
+            "uptime": "99.5%",
+            "load": "Low",
+            "region": "Ahmedabad (Vasna)",
+            "type": "Agriculture"
+        }
+    ],
+    "alerts": [
+        {
+            "active": true,
+            "type": "Heavy Rainfall Warning",
+            "zone": "West Zone (Satellite, Bopal)",
+            "timestamp": "2024-03-20T10:00:00Z",
+            "desc": "Water logging reported at Shyamal Cross Roads."
+        },
+        {
+            "active": true,
+            "type": "Heatwave Alert",
+            "zone": "North Zone (Naroda)",
+            "timestamp": "2024-03-20T11:30:00Z",
+            "desc": "Temperature expected to cross 42°C. Hydration advisories issued."
+        }
+    ],
+    "complaints": [
+        {
+            "id": "AMC-2024-9982",
+            "type": "Water Logging",
+            "loc": "Helmet Circle, Drive-in Road",
+            "zone": "West",
+            "status": "In Progress",
+            "date": "2024-03-21"
+        },
+        {
+            "id": "AMC-2024-9981",
+            "type": "Potholes (Deep)",
+            "loc": "SG Highway Service Road (Thaltej)",
+            "zone": "North West",
+            "status": "Pending",
+            "date": "2024-03-21"
+        },
+        {
+            "id": "AMC-2024-9975",
+            "type": "Stray Cattle Menace",
+            "loc": "Vejalpur Main Market",
+            "zone": "South West",
+            "status": "Resolved",
+            "date": "2024-03-20"
+        },
+        {
+            "id": "AMC-2024-9960",
+            "type": "Garbage Dump Overflow",
+            "loc": "Juhapura Cross Roads",
+            "zone": "South West",
+            "status": "Pending",
+            "date": "2024-03-19"
+        },
+        {
+            "id": "AMC-2024-9955",
+            "type": "Street Light Failure",
+            "loc": "Riverfront Walkway (East)",
+            "zone": "Central",
+            "status": "Resolved",
+            "date": "2024-03-18"
+        },
+        {
+            "id": "AMC-2024-9942",
+            "type": "Illegal Parking",
+            "loc": "CG Road, Navrangpura",
+            "zone": "West",
+            "status": "In Progress",
+            "date": "2024-03-18"
+        },
+        {
+            "id": "AMC-2024-9930",
+            "type": "Pipeline Leakage",
+            "loc": "Maninagar Railway Station",
+            "zone": "South",
+            "status": "Resolved",
+            "date": "2024-03-17"
+        },
+        {
+            "id": "AMC-2024-9922",
+            "type": "Public Toilet Cleaning",
+            "loc": "Kankaria Lake Gate 3",
+            "zone": "South",
+            "status": "Pending",
+            "date": "2024-03-16"
+        }
+    ],
+    "appointments": [
+        {
+            "id": 1,
+            "doctor": "Dr. Rajesh Patel",
+            "hospital": "SVP Hospital (Riverfront)",
+            "date": "2024-03-25",
+            "time": "10:00 AM",
+            "status": "Confirmed",
+            "dept": "Cardiology"
+        },
+        {
+            "id": 2,
+            "doctor": "Dr. Anjali Shah",
+            "hospital": "Apollo Hospitals, Sola",
+            "date": "2024-03-28",
+            "time": "02:30 PM",
+            "status": "Pending",
+            "dept": "Orthopedics"
+        },
+        {
+            "id": 3,
+            "doctor": "Dr. Vikram Sarabhai",
+            "hospital": "Zydus Hospital",
+            "date": "2024-04-02",
+            "time": "11:00 AM",
+            "status": "Scheduled",
+            "dept": "General Medicine"
+        },
+        {
+            "id": 4,
+            "doctor": "Dr. Meera Iyer",
+            "hospital": "Civil Hospital, Asarwa",
+            "date": "2024-04-05",
+            "time": "09:15 AM",
+            "status": "Confirmed",
+            "dept": "Neurology"
+        }
+    ],
+    "mandiRates": [
+        {
+            "crop": "Cotton (Shankar-6)",
+            "price": "₹7,200 / qtls",
+            "trend": "up",
+            "mandi": "Botad"
+        },
+        {
+            "crop": "Jeera (Cumin)",
+            "price": "₹28,500 / qtls",
+            "trend": "down",
+            "mandi": "Unjha"
+        },
+        {
+            "crop": "Castor Seeds",
+            "price": "₹6,150 / qtls",
+            "trend": "up",
+            "mandi": "Patan"
+        },
+        {
+            "crop": "Wheat (Lokwan)",
+            "price": "₹2,350 / qtls",
+            "trend": "stable",
+            "mandi": "Ahmedabad"
+        },
+        {
+            "crop": "Groundnut",
+            "price": "₹6,800 / qtls",
+            "trend": "up",
+            "mandi": "Rajkot"
+        },
+        {
+            "crop": "Onion (Red)",
+            "price": "₹1,200 / qtls",
+            "trend": "down",
+            "mandi": "Bhavnagar"
+        }
+    ],
+    "schemes": [
+        {
+            "id": 1,
+            "name": "PM Kisan Samman Nidhi",
+            "desc": "Financial support for farmers",
+            "deadline": "31 Mar 2024",
+            "applied": false,
+            "status": "Eligible"
+        },
+        {
+            "id": 2,
+            "name": "i-Khedut Tractor Subsidy",
+            "desc": "40% subsidy on farm tractors",
+            "deadline": "15 Apr 2024",
+            "applied": true,
+            "status": "Under Review"
+        },
+        {
+            "id": 3,
+            "name": "Gujarat Organic Farming Scheme",
+            "desc": "Support for organic adoption",
+            "deadline": "20 May 2024",
+            "applied": false,
+            "status": "Eligible"
+        },
+        {
+            "id": 4,
+            "name": "Solar Pump Yojana (SKY)",
+            "desc": "Subsidized solar pumps",
+            "deadline": "Active",
+            "applied": false,
+            "status": "Eligible"
+        },
+        {
+            "id": 5,
+            "name": "Mukhyamantri Pak Sangrah",
+            "desc": "Storage structure subsidy",
+            "deadline": "30 Jun 2024",
+            "applied": true,
+            "status": "Approved"
+        }
+    ]
+}
