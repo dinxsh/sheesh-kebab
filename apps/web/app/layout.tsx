@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Changed from localFont
 import "./globals.css";
 import Link from "next/link";
-import { Zap, Grid, LayoutDashboard, ShieldCheck, Layers } from "lucide-react";
+import { Zap, Grid, LayoutDashboard, ShieldCheck, Layers, Globe } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
@@ -42,19 +42,28 @@ export default function RootLayout({
                   <Link href="/services" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors flex items-center gap-2">
                     <Grid className="h-4 w-4" /> Services
                   </Link>
+                  <Link href="/profile" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors flex items-center gap-2">
+                    <Layers className="h-4 w-4" /> My Profile
+                  </Link>
                   <Link href="/admin" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors flex items-center gap-2">
                     <ShieldCheck className="h-4 w-4" /> Admin
                   </Link>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <div className="hidden md:flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-100">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                    <span className="text-xs font-semibold text-slate-600">System Online</span>
-                  </div>
-                  <button className="bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-slate-800 transition-colors shadow-lg shadow-slate-900/20">
-                    Login
-                  </button>
+                <div className="flex items-center gap-4">
+                  <Link href="/profile">
+                    <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 group cursor-pointer hover:bg-indigo-100 transition-colors">
+                      <div className="h-6 w-6 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-[10px] font-bold text-white shadow-sm ring-2 ring-white">
+                        JP
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[10px] font-bold text-indigo-900 leading-none uppercase tracking-wide">Jan Parichay</span>
+                        <span className="text-[10px] font-medium text-indigo-600 leading-none flex items-center gap-1">
+                          Verified <ShieldCheck className="h-2.5 w-2.5 fill-indigo-600 text-white" />
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
